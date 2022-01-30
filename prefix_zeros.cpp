@@ -66,7 +66,19 @@ void solve() {
 	int n; cin >> n;
 	ll k; cin >> k;
 	str s; cin >> s;
-	
+	int low = 0;
+	int high = n + 1;
+	while(low + 1 < high) {
+		int mid = (low + high) >> 1;
+		int cnt = 0;
+		per(mid - 1) {
+			int now = (cnt + s[i] - '0') % 10;
+			if(now) cnt += 10 - now;
+		}
+		if(cnt <= k) low = mid;
+		else high = mid;
+	}
+	cout << low << endl;
 }
 
 int main() {
