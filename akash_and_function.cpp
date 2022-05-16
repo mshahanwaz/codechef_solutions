@@ -7,13 +7,13 @@ using ll = long long;
 #define fastIO cin.tie(0)->sync_with_stdio(0)
 
 int main() {
-	fastIO;
-	int TC = 1;
-	cin >> TC;
-	while (TC--) {
-		int n;
-		cin >> n;
-		cout << (n + 1) / 2 << endl;
-	}
-	return 0;
+  fastIO;
+  int TC = 1;
+  cin >> TC;
+  while (TC--) {
+    int n;
+    cin >> n;
+    cout << (n + 1) / 2 << endl;
+  }
+  return 0;
 }
